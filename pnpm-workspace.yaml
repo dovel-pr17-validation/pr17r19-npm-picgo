@@ -1,0 +1,23 @@
+allowBuilds:
+  core-js: true
+  electron: true
+  electron-winstaller: true
+  esbuild: true
+  msw: true
+  vue-demi: true
+
+onlyBuiltDependencies:
+  - core-js
+  - ejs
+  - electron
+  - electron-winstaller
+  - esbuild
+  - husky
+  - vue-demi
+
+patchedDependencies:
+  app-builder-lib@26.1.0: patches/app-builder-lib@26.1.0.patch
+
+supportedArchitectures:
+  cpu: [ x64, arm64 ]
+  os: [ current ]
